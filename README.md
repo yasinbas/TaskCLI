@@ -18,3 +18,23 @@ Project link: https://roadmap.sh/projects/task-tracker
 1. **Compile the project:**
    ```bash
    javac -encoding UTF-8 TaskCli.java
+
+
+# Add a new task
+java TaskCli add "Buy groceries"
+
+# Update a task
+java TaskCli update 1 "Buy groceries and cook dinner"
+
+# Delete a task
+java TaskCli delete 1
+
+# Mark status
+java TaskCli mark-in-progress 1
+java TaskCli mark-done 1
+
+# List tasks
+java TaskCli list
+java TaskCli list done
+java TaskCli list todo
+java TaskCli list in-progress
